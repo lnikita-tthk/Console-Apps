@@ -4,29 +4,29 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Number Control!");
 
-            int number = int.Parse(Console.ReadLine());
-            if (number == 12)
+            int number = 201;
+            
+            //kontrollitakse kas arv on suurem 189-st
+            if (number > 189)
             {
-                Console.WriteLine($"Number on {number}");
-            }
-            else if (number >= 13 && number <= 25)
+                //kui vastab if tingimustle, siis naitab konsoolis seda arvu
+                Console.WriteLine("Number is bigger than 189");
 
-            {
-                // nestimine
-                if (number == 17)
+                //if ja else nestimine
+                if (number >= 190 && number <= 200)
                 {
-                    Console.WriteLine("Number on 17");
+                    Console.WriteLine("Number is between 190 to 200");
                 }
                 else
                 {
-                    Console.WriteLine("Number on 13 kuni 16 ja 18 kuni 25");
+                    Console.WriteLine("Number is bigger than 200");
                 }
             }
             else
             {
-                Console.WriteLine("Imelik number");
+                Console.WriteLine("Number is smaller");
             }
         }
     }
